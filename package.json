@@ -1,0 +1,12 @@
+{
+  "name": "logagent-output-http-sse",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@toverux/expresse": "^2.4.0",
+    "express": "^4.16.3",
+    "extglob": "^3.0.0",
+    "fast-safe-stringify": "^2.0.4"
+  }
+}
