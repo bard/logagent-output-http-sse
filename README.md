@@ -31,7 +31,7 @@ Assuming logagent is running on `log.example.com`, the following will stream all
     <script>
      const eventSource = new EventSource('http://log.example.com/events')
 
-     eventSource.onmessage = (event) =>
+     eventSource.onmessage = (event) => {
        console.log(event.data)
      }
     </script>
