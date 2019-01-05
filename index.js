@@ -55,12 +55,12 @@ OutputHTTP.prototype.eventHandler = function (data, context) {
   }
 
   if (this.config.debug) {
-    console.log('logagent-output-http: sending log data to clients')
+    console.log('logagent-output-http: sending log data to %d client(s)',
+                this.clients.size)
   }
 
   this.clients.forEach(c => {
     if (this.config.debug) {
-      console.log('testing ', c)
       console.log('data', data)
     }
     if (!c.sourceFilter || c.sourceFilter.test(data.logSource)) {
