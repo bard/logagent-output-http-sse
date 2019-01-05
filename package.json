@@ -11,6 +11,7 @@
   ],
   "dependencies": {
     "@toverux/expresse": "^2.4.0",
+    "cors": "^2.8.5",
     "express": "^4.16.3",
     "extglob": "^3.0.0",
     "fast-safe-stringify": "^2.0.4"

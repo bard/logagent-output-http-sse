@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const {makeRe} = require('extglob')
 const safeStringify = require('fast-safe-stringify')
 const {sse} = require('@toverux/expresse')
@@ -7,6 +8,7 @@ function OutputHTTP (config, eventEmitter) {
   this.config = config
   this.eventEmitter = eventEmitter
   this.app = express()
+  this.app.use(cors())
   this.clients = new Set()
 }
 
